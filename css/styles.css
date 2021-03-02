@@ -1,0 +1,359 @@
+:root {
+  --main-text-color: #212121;
+  --main-bg-color: #ffffff;
+  --accent-color: #2196f3;
+  --secondary-text-color: #757575;
+  --grid-list-item-margin: 15px;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--main-bg-color);
+  color: var(--main-text-color);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+/* Шапка */
+.header {
+  border-bottom: 1px solid #ececec;
+  margin: 0;
+  padding: 0;
+}
+.logo {
+  display: block;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
+  text-decoration: none;
+}
+.logo-span {
+  color: var(--accent-color);
+}
+
+.navigation {
+  margin: 0 0 0 93px;
+}
+.container.header-container {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.navigation-list-item + .navigation-list-item {
+  margin-left: 50px;
+}
+
+.navigation-list-link {
+  display: block;
+  padding: 32px 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: inherit;
+}
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--accent-color);
+}
+.navigation-list-link.current {
+  color: var(--accent-color);
+}
+.header-contacts-list {
+  list-style: none;
+  display: flex;
+  margin: 0 0 0 auto;
+  padding: 0;
+}
+
+.header-contacts-list-item + .header-contacts-list-item {
+  margin-left: 50px;
+}
+
+.header-contacts-link {
+  display: block;
+  padding: 32px 0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  color: var(--secondary-text-color);
+}
+/* Головний контент сторінки index.html */
+/* Секція-Герой */
+.section-hero {
+  background-color: #2f303a;
+  margin: 0;
+  padding: 200px 0;
+}
+.section-hero-title {
+  max-width: calc(100% / 1.72);
+  margin: 0 auto 30px auto;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.364;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--main-bg-color);
+}
+.section-hero-button {
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+  background: var(--accent-color);
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-bg-color);
+  border: transparent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.section-hero-button:hover,
+.section-hero-button:focus {
+  background-color: #188ce8;
+}
+/* Секція-Переваги */
+.advantages {
+  margin: 0;
+  padding: 94px 0;
+}
+.opacity-header {
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  text-align: left;
+  opacity: 0;
+}
+.advantages-list {
+  list-style: none;
+  display: flex;
+  margin: calc(-1 * var(--grid-list-item-margin));
+  padding: 0;
+}
+.advantages-list-item {
+  margin: var(--grid-list-item-margin);
+  width: calc(100% / 3 - 2 * var(--grid-list-item-margin));
+}
+
+.advantages-list-item-header {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+.advantages-list-item-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin: 0;
+}
+/* Заголовки двох секцій "Що ми робимо" та "Наша команда" */
+.section-title {
+  margin: 0 0 50px 0;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* Секція-Що ми робимо */
+.what-we-do {
+  margin: 0;
+  padding-bottom: 94px;
+}
+
+.what-we-do-list {
+  display: flex;
+  margin: calc(-1 * var(--grid-list-item-margin));
+  padding: 0;
+  list-style: none;
+}
+.what-we-do-list-item {
+  margin: var(--grid-list-item-margin);
+  width: calc(100% / 3 - 2 * var(--grid-list-item-margin));
+}
+.what-we-do-img {
+  display: block;
+  max-width: 100%;
+}
+/* Секція-Наша команда */
+.our-team {
+  background: #f5f4fa;
+  margin: 0px;
+  padding: 94px 0;
+}
+.our-team-cards-list {
+  list-style: none;
+  display: flex;
+  margin: calc(-1 * var(--grid-list-item-margin));
+  padding: 0;
+}
+.our-team-card {
+  margin: var(--grid-list-item-margin);
+  width: calc(100% / 3 - 2 * var(--grid-list-item-margin));
+  background: var(--main-bg-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.our-team-card-img {
+  display: block;
+  max-width: 100%;
+  margin: 0 0 30px 0;
+}
+.our-team-card-name {
+  margin: 0 0 10px 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.our-team-card-job {
+  margin: 0 0 30px 0;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+/* Сторінка Портфоліо */
+/* Секція-Фільтри */
+.portfolio {
+  margin: 0;
+  padding: 94px 0;
+}
+.filter-list {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 50px 0;
+  padding: 0;
+  list-style: none;
+}
+.filter-list-item + .filter-list-item {
+  margin-left: 9px;
+}
+.filter-list-button {
+  display: block;
+  padding: 6px 22px;
+  cursor: pointer;
+  background: #f5f4fa;
+  color: inherit;
+  border: transparent;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.filter-list-button:hover,
+.filter-list-button:focus {
+  background: var(--accent-color);
+  color: var(--main-bg-color);
+}
+
+/* Секція-Наші продукти */
+.products-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(-1 * var(--grid-list-item-margin));
+  padding: 0;
+  list-style: none;
+}
+.products-list-item {
+  margin: var(--grid-list-item-margin);
+  width: calc(100% / 3 - 2 * var(--grid-list-item-margin));
+  border: 1px solid #eeeeee;
+}
+
+.products-list-img {
+  display: block;
+  align-items: center;
+  max-width: 100%;
+  margin: 0 0 20px 0;
+}
+.products-list-header {
+  margin: 0 0 4px 0;
+  padding: 0 24px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.products-list-text {
+  margin: 0 0 20px 0;
+  padding: 0 24px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+}
+
+/* Підвал */
+.footer {
+  background-color: #2f303a;
+  margin: 0;
+  padding: 60px 0;
+}
+.footer-logo {
+  display: block;
+  margin: 0 0 20px 0;
+  text-decoration: none;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: var(--main-bg-color);
+}
+.footer-address-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.footer-address-list-item {
+  color: var(--main-bg-color);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+.footer-address-list-item:not(.footer-address-list-item:last-child) {
+  margin: 0 0 9px 0;
+}
+.footer-address-list-text {
+  margin: 0;
+}
+.footer-address-contacts-link {
+  display: block;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.6);
+}
