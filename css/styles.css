@@ -112,12 +112,10 @@ body {
       rgba(47, 48, 58, 0.4)
     ),
     url('../images/index/bg-Img.jpg');
-  background-size: contain;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
 }
-/* .hero-container {
-  padding: 200px 0;
-} */
 .section-hero-title {
   max-width: calc(100% / 1.72);
   margin: 0 auto 30px auto;
@@ -171,7 +169,28 @@ body {
   margin: var(--grid-list-item-margin);
   width: calc(100% / 3 - 2 * var(--grid-list-item-margin));
 }
-
+.advantages-list-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin: 0 0 30px 0;
+  background-color: #f5f4fa;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 4px;
+}
+.advantages-list-item.advantages-list-item-antenna::before {
+  background-image: url(../images/index/icons/antenna-1.svg);
+}
+.advantages-list-item.advantages-list-item-clock::before {
+  background-image: url(../images/index/icons/clock-1.svg);
+}
+.advantages-list-item.advantages-list-item-diagram::before {
+  background-image: url(../images/index/icons/diagram-1.svg);
+}
+.advantages-list-item.advantages-list-item-astronaut::before {
+  background-image: url(../images/index/icons/astronaut-1.svg);
+}
 .advantages-list-item-header {
   font-weight: bold;
   font-size: 14px;
@@ -258,6 +277,38 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+/* Секція-Постійні клієнти */
+.clients {
+  margin: 0;
+  padding: 94px 0;
+}
+.clients-list {
+  display: flex;
+  margin: calc(-1 * var(--grid-list-item-margin));
+  padding: 0;
+  list-style: none;
+}
+.clients-list-item {
+  margin: var(--grid-list-item-margin);
+  padding: 0;
+  width: calc(100% / 6 - 2 * var(--grid-list-item-margin));
+}
+.clients-list-link {
+  display: block;
+  height: 90px;
+  padding: 20px 0;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+.clients-list-logo {
+  display: block;
+  margin: auto;
 }
 /* Сторінка Портфоліо */
 /* Секція-Фільтри */
