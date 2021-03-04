@@ -240,10 +240,8 @@ body {
   max-width: 100%;
 }
 /* Секція-Наша команда */
-.our-team {
+.section.section-our-team {
   background: #f5f4fa;
-  margin: 0px;
-  padding: 94px 0;
 }
 .our-team-cards-list {
   list-style: none;
