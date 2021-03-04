@@ -324,20 +324,23 @@ body {
   width: calc(100% / 6 - 2 * var(--grid-list-item-margin));
 }
 .clients-list-link {
-  display: block;
+  display: flex;
   height: 90px;
-  padding: 20px 0;
+  margin: 0;
+  align-items: center;
+  justify-content: center;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-}
-.clients-list-link:hover,
-.clients-list-link:focus {
-  border: 1px solid #2196f3;
-  border-radius: 4px;
+  fill: #afb1b8;
 }
 .clients-list-logo {
   display: block;
-  margin: auto;
+}
+.clients-list-link:hover,
+.clients-list-link:focus {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
 }
 /* Сторінка Портфоліо */
 /* Секція-Фільтри */
