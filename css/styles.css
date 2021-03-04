@@ -83,7 +83,8 @@ body {
 }
 
 .header-contacts-link {
-  display: block;
+  display: flex;
+  align-items: center;
   padding: 32px 0;
   font-style: normal;
   font-weight: 500;
@@ -92,6 +93,15 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   color: var(--secondary-text-color);
+  fill: var(--secondary-text-color);
+}
+.header-contacts-link-icon {
+  display: block;
+  margin: 0 10px 0 0;
+}
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  fill: var(--accent-color);
 }
 /* Головний контент сторінки index.html */
 /* Секція-Герой */
@@ -169,6 +179,17 @@ body {
   margin: var(--grid-list-item-margin);
   width: calc(100% / 3 - 2 * var(--grid-list-item-margin));
 }
+.advantages-list-item-thumb {
+  height: 120px;
+  margin: 0 0 30px 0;
+  padding: 25px 0;
+  background: #f5f4fa;
+  border-radius: 4px;
+}
+.advantages-list-item-icon {
+  display: block;
+  margin: 0 auto;
+}
 .advantages-list-item-title {
   font-weight: bold;
   font-size: 14px;
@@ -237,7 +258,11 @@ body {
 .our-team-card-img {
   display: block;
   max-width: 100%;
-  margin: 0 0 30px 0;
+  margin: 0 0 0 0;
+}
+.our-team-card-description {
+  margin: 0;
+  padding: 30px 32px;
 }
 .our-team-card-name {
   margin: 0 0 10px 0;
@@ -248,13 +273,39 @@ body {
   letter-spacing: 0.03em;
 }
 .our-team-card-job {
-  margin: 0 0 30px 0;
+  margin: 0 0 16px 0;
   font-weight: normal;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
+}
+.our-team-card-socials-list {
+  display: flex;
+  margin: -5px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.our-team-card-socials-list-item {
+  margin: 5px;
+}
+.our-team-card-socials-list-link {
+  display: block;
+  margin: 0;
+  padding: 12px;
+  border-radius: 50%;
+  fill: #afb1b8;
+}
+.our-team-card-socials-list-icon {
+  display: block;
+}
+.our-team-card-socials-list-link:hover,
+.our-team-card-socials-list-link:focus {
+  background: var(--accent-color);
+  fill: var(--main-bg-color);
 }
 /* Секція-Постійні клієнти */
 .clients {
@@ -373,6 +424,10 @@ body {
   margin: 0;
   padding: 60px 0;
 }
+.footer-container {
+  display: flex;
+  align-items: center;
+}
 .footer-logo {
   display: block;
   margin: 0 0 20px 0;
@@ -408,4 +463,46 @@ body {
   display: block;
   text-decoration: none;
   color: rgba(255, 255, 255, 0.6);
+}
+.footer-socials-container {
+  margin: 0 0 0 70px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer-socials-title {
+  display: block;
+  margin: 0 0 20px 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-socials-list {
+  display: flex;
+  margin: -5px;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+.footer-socials-list-item {
+  margin: 5px;
+}
+.footer-socials-list-link {
+  display: block;
+  margin: 0;
+  padding: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  fill: var(--main-bg-color);
+}
+.footer-socials-list-icon {
+  display: block;
+}
+.footer-socials-list-link:hover,
+.footer-socials-list-link:focus {
+  background: var(--accent-color);
 }
