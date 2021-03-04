@@ -15,6 +15,10 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
+.section {
+  margin: 0;
+  padding: 94px 0;
+}
 /* Шапка */
 .header {
   border-bottom: 1px solid #ececec;
@@ -104,9 +108,10 @@ body {
 }
 /* Головний контент сторінки index.html */
 /* Секція-Герой */
-.section-hero {
+.section.section-hero {
   background-color: #2f303a;
   margin: 0;
+  padding: 0;
 }
 .bg-container {
   display: block;
@@ -157,9 +162,9 @@ body {
   background-color: #188ce8;
 }
 /* Секція-Переваги */
-.advantages {
+.section.section-advantages {
   margin: 0;
-  padding: 94px 0;
+  padding: 94px 0 47px 0;
 }
 .visualy-hidden-title {
   position: absolute;
@@ -215,9 +220,9 @@ body {
   letter-spacing: 0.03em;
 }
 /* Секція-Що ми робимо */
-.what-we-do {
+.section.section-what-we-do {
   margin: 0;
-  padding-bottom: 94px;
+  padding: 47px 0 94px 0;
 }
 
 .what-we-do-list {
@@ -343,12 +348,9 @@ body {
 }
 /* Сторінка Портфоліо */
 /* Секція-Фільтри */
-.portfolio {
-  margin: 0;
-  padding: 94px 0;
-}
 .filter-list {
   display: flex;
+  align-items: center;
   justify-content: center;
   margin: 0 0 50px 0;
   padding: 0;
@@ -375,6 +377,8 @@ body {
 .filter-list-button:focus {
   background: var(--accent-color);
   color: var(--main-bg-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Секція-Наші продукти */
@@ -393,6 +397,11 @@ body {
   display: block;
   text-decoration: none;
   color: inherit;
+}
+.products-list-link:hover,
+.products-list-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .products-list-img {
   display: block;
