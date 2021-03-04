@@ -169,29 +169,7 @@ body {
   margin: var(--grid-list-item-margin);
   width: calc(100% / 3 - 2 * var(--grid-list-item-margin));
 }
-.advantages-list-item::before {
-  content: '';
-  display: block;
-  height: 120px;
-  margin: 0 0 30px 0;
-  background-color: #f5f4fa;
-  background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 4px;
-}
-.advantages-list-item.advantages-list-item-antenna::before {
-  background-image: url(../images/index/icons/antenna-1.svg);
-}
-.advantages-list-item.advantages-list-item-clock::before {
-  background-image: url(../images/index/icons/clock-1.svg);
-}
-.advantages-list-item.advantages-list-item-diagram::before {
-  background-image: url(../images/index/icons/diagram-1.svg);
-}
-.advantages-list-item.advantages-list-item-astronaut::before {
-  background-image: url(../images/index/icons/astronaut-1.svg);
-}
-.advantages-list-item-header {
+.advantages-list-item-title {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.143;
