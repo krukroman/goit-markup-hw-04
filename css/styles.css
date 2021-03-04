@@ -63,9 +63,7 @@ body {
   color: inherit;
 }
 .navigation-list-link:hover,
-.navigation-list-link:focus,
-.header-contacts-link:hover,
-.header-contacts-link:focus {
+.navigation-list-link:focus {
   color: var(--accent-color);
 }
 .navigation-list-link.current {
@@ -101,6 +99,7 @@ body {
 }
 .header-contacts-link:hover,
 .header-contacts-link:focus {
+  color: var(--accent-color);
   fill: var(--accent-color);
 }
 /* Головний контент сторінки index.html */
@@ -258,7 +257,7 @@ body {
 .our-team-card-img {
   display: block;
   max-width: 100%;
-  margin: 0 0 0 0;
+  margin: 0;
 }
 .our-team-card-description {
   margin: 0;
