@@ -176,12 +176,14 @@ body {
 .advantages-list {
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: calc(-1 * var(--grid-list-item-margin));
   padding: 0;
 }
 .advantages-list-item {
   margin: var(--grid-list-item-margin);
-  width: calc(100% / 3 - 2 * var(--grid-list-item-margin));
+  max-width: calc(100% / 4 - (2 * var(--grid-list-item-margin)));
 }
 .advantages-list-item-thumb {
   height: 120px;
@@ -227,17 +229,20 @@ body {
 
 .what-we-do-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: calc(-1 * var(--grid-list-item-margin));
   padding: 0;
   list-style: none;
 }
 .what-we-do-list-item {
   margin: var(--grid-list-item-margin);
-  width: calc(100% / 3 - 2 * var(--grid-list-item-margin));
+  max-width: calc(100% / 3 - (2 * var(--grid-list-item-margin)));
 }
 .what-we-do-img {
   display: block;
   max-width: 100%;
+  align-self: center;
 }
 /* Секція-Наша команда */
 .section.section-our-team {
@@ -246,12 +251,14 @@ body {
 .our-team-cards-list {
   list-style: none;
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: calc(-1 * var(--grid-list-item-margin));
   padding: 0;
 }
 .our-team-card {
   margin: var(--grid-list-item-margin);
-  width: calc(100% / 3 - 2 * var(--grid-list-item-margin));
+  max-width: calc(100% / 4 - (2 * var(--grid-list-item-margin)));
   background: var(--main-bg-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -316,14 +323,15 @@ body {
 }
 .clients-list {
   display: flex;
+  align-items: center;
+  justify-content: center;
   margin: calc(-1 * var(--grid-list-item-margin));
   padding: 0;
   list-style: none;
 }
 .clients-list-item {
   margin: var(--grid-list-item-margin);
-  padding: 0;
-  width: calc(100% / 6 - 2 * var(--grid-list-item-margin));
+  width: calc(100% / 6 - (2 * var(--grid-list-item-margin)));
 }
 .clients-list-link {
   display: flex;
@@ -383,13 +391,15 @@ body {
 .products-list {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   margin: calc(-1 * var(--grid-list-item-margin));
   padding: 0;
   list-style: none;
 }
 .products-list-item {
   margin: var(--grid-list-item-margin);
-  width: calc(100% / 3 - 2 * var(--grid-list-item-margin));
+  max-width: calc(100% / 3 - (2 * var(--grid-list-item-margin)));
 }
 .products-list-link {
   display: block;
