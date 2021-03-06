@@ -331,7 +331,7 @@ body {
 }
 .clients-list-item {
   margin: var(--grid-list-item-margin);
-  max-width: calc(100% / 6 - (2 * var(--grid-list-item-margin)));
+  width: calc(100% / 6 - (2 * var(--grid-list-item-margin)));
 }
 .clients-list-link {
   display: flex;
